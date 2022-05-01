@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+body {
+    color: rgba(0, 0, 0, 1);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+
+}
+
+
+/* Adicionando um background com a logo da empresa*/
+header#cabecalho {
+    height: 109px;
+    background: url("../_imagens/IMG-20210528-WA0024.jpg") no-repeat 0px -2px ;
+
+}
+
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+/*Formatação de Imagens*/
+figure.foto-legenda{
+    
+    width: 50%;
+    height: 40%;
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15px;
+    
+    /*Criando uma borda para a imagem*/
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+    
+    /*Proporção da Imagem*/
+}
+figure.foto-legenda figcaption{
+    /*A posição da legenda do texto, além de ser o objeto filho da figure legenda*/
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+/*Formatação do Menu*/
+nav#menu ul{
+    list-style: none;
+    padding: 0;
+    background-color: rgb(8, 40, 127);
+    position: relative;
+    left: 0px;
+    top: 50px;
+    /*Justifica o conteniner do menu principal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Mover a Margem do menu */
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding: 10px ;
+    margin: 0px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: rgb(156, 162, 167);
+}
+
+nav#menu a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color:rgb(218, 63, 95);
+}
+/*Criando a divisão do site*/
+footer#rodape{
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+    color: black;
+}
